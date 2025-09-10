@@ -366,38 +366,46 @@ body {
 }
 
 /* Warning Section */
+.section.warning {
+    background: var(--white);
+    border: 2px solid var(--black);
+    box-shadow: 5px 5px 0px var(--black);
+}
+
 .warning-points,
 .success-evidence,
 .bottom-line {
     margin: 2rem 0;
-    padding: 1.5rem;
+    padding: 2rem;
     background: var(--light-gray);
-    border-left: 4px solid var(--brat-green);
+    border: 2px solid var(--black);
+    box-shadow: 3px 3px 0px var(--black);
 }
 
 .warning-points h4,
 .success-evidence h4,
 .bottom-line h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: var(--black);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.02em;
 }
 
 .sources {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: var(--white);
-    border: 2px solid var(--brat-green);
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--brat-green);
+    border: 2px solid var(--black);
+    box-shadow: 3px 3px 0px var(--black);
 }
 
 .sources h5 {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 800;
     color: var(--black);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.02em;
 }
@@ -408,23 +416,27 @@ body {
 }
 
 .source-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--light-gray);
+    padding: 0.8rem 0;
+    border-bottom: 2px solid var(--black);
+    background: var(--white);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 0px var(--black);
 }
 
 .source-list li:last-child {
-    border-bottom: none;
+    border-bottom: 2px solid var(--black);
 }
 
 .source-list a {
-    color: var(--brat-green);
+    color: var(--black);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: all 0.2s ease;
 }
 
 .source-list a:hover {
-    color: var(--dark-green);
+    color: var(--brat-green);
     text-decoration: underline;
 }
 
