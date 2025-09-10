@@ -365,6 +365,69 @@ body {
     box-shadow: 3px 3px 0px var(--black);
 }
 
+/* Warning Section */
+.warning-points,
+.success-evidence,
+.bottom-line {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-left: 4px solid var(--brat-green);
+}
+
+.warning-points h4,
+.success-evidence h4,
+.bottom-line h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.sources {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border: 2px solid var(--brat-green);
+}
+
+.sources h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.source-list {
+    list-style: none;
+    padding: 0;
+}
+
+.source-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.source-list li:last-child {
+    border-bottom: none;
+}
+
+.source-list a {
+    color: var(--brat-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.source-list a:hover {
+    color: var(--dark-green);
+    text-decoration: underline;
+}
+
 /* Timeline Breakdown */
 .timeline-breakdown {
     margin: 2rem 0;
