@@ -380,6 +380,8 @@ body {
     background: var(--light-gray);
     border: 2px solid var(--black);
     box-shadow: 3px 3px 0px var(--black);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .warning-points h4,
@@ -391,6 +393,15 @@ body {
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+}
+
+.warning-points p,
+.success-evidence p,
+.bottom-line p {
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .sources {
