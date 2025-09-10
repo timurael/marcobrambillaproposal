@@ -21,6 +21,8 @@ body {
     background-color: var(--white);
     font-size: 16px;
     overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .container {
@@ -28,6 +30,8 @@ body {
     margin: 0 auto;
     padding: 2rem 1.5rem;
     min-height: 100vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Header Styles */
@@ -58,8 +62,10 @@ body {
 
 /* Content Styles */
 .content {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .greeting h2 {
@@ -82,6 +88,10 @@ body {
 
 .section {
     margin-bottom: 3rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
 }
 
 .section h3 {
@@ -370,6 +380,9 @@ body {
     background: var(--white);
     border: 2px solid var(--black);
     box-shadow: 5px 5px 0px var(--black);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .warning-points,
@@ -382,6 +395,9 @@ body {
     box-shadow: 3px 3px 0px var(--black);
     word-wrap: break-word;
     overflow-wrap: break-word;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .warning-points h4,
@@ -402,6 +418,8 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
+    max-width: 100%;
+    width: 100%;
 }
 
 .sources {
@@ -410,6 +428,11 @@ body {
     background: var(--brat-green);
     border: 2px solid var(--black);
     box-shadow: 3px 3px 0px var(--black);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .sources h5 {
@@ -648,6 +671,42 @@ body {
     
     .cta {
         padding: 1.5rem 1rem;
+    }
+    
+    /* Warning section mobile fixes */
+    .section.warning {
+        margin: 1rem 0;
+        padding: 1rem;
+        word-break: break-word;
+    }
+    
+    .warning-points,
+    .success-evidence,
+    .bottom-line {
+        margin: 1rem 0;
+        padding: 1rem;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+    
+    .warning-points p,
+    .success-evidence p,
+    .bottom-line p {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        hyphens: auto;
+    }
+    
+    .sources {
+        margin: 1rem 0;
+        padding: 1rem;
+        word-break: break-word;
+    }
+    
+    .source-list li {
+        padding: 0.5rem;
+        word-break: break-word;
+        overflow-wrap: anywhere;
     }
 }
 
